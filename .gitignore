@@ -1,1 +1,14 @@
-/home/eon/Desktop/ShowSegmentation/CodeAndOutputs/2006-01-02_0000_US_00001057_V11_M2_VHS10_H4_JA.stats.csv
+# Don't track content of these folders
+data/
+someOtherfoler/
+W5/plotly_key
+telegram_keys
+W1&2-Keyshots/2006_clipped_key_frames/
+W1&2-Keyshots/2006-01-02_0000_US_00001057_V11_M2_VHS10_H4_JA_key_frames/
+W4-VSummarization/VASNet/data/
+
+# Dataset files
+*.pk
+*.csv
+
+
