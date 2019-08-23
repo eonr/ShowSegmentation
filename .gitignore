@@ -1,14 +1,16 @@
+# Dataset files
+*.pk
+*.csv
+*.pickle
+
 # Don't track content of these folders
 data/
-someOtherfoler/
 W5/plotly_key
+W5/*/
 telegram_keys
 W1&2-Keyshots/2006_clipped_key_frames/
 W1&2-Keyshots/2006-01-02_0000_US_00001057_V11_M2_VHS10_H4_JA_key_frames/
 W4-VSummarization/VASNet/data/
-
-# Dataset files
-*.pk
-*.csv
-
-
+final_usable_code/final_celeb_detection/final_pickles/anchors-with-TV-encodings.pickle
+singularity/
+W6-7-end-show_identification/IMDb/
