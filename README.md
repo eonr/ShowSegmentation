@@ -1,5 +1,7 @@
 # ShowSegmentation
-GSoC 2019 project with Red Hen Lab. The goal is to create an algorithm that can automatically find boundaries between TV shows in unannotated recordings, by identifying facial and logo cues of various shows and using binary search to get to the boundary. More information about the project can be found <a href="https://sites.google.com/site/distributedlittleredhen/home/the-cognitive-core-research-topics-in-red-hen/the-barnyard/tv-show-segmentation">here</a>
+GSoC 2019 project with Red Hen Lab. The goal is to create an algorithm that can automatically find boundaries between TV shows in unannotated recordings, by identifying facial and logo cues of various shows and using binary search to get to the boundary. More information about the project can be found <a href="https://sites.google.com/site/distributedlittleredhen/home/the-cognitive-core-research-topics-in-red-hen/the-barnyard/tv-show-segmentation">here</a>. 
+
+### Blogs detailing weekly progress can be found at <a href="eonr.github.io">eonr.github.io</a>
 
 ## Usage:
 1. Clone the repo to your machine
@@ -24,4 +26,3 @@ python3 segment_video.py path/to/input/video.mp4 path/to/store/output --verbose
 ```
 1980-06-03_0000_US_00020088_V0_U2_M9_EG1_DB.mp4
 ```
-## Blogs detailing weekly progress can be found at <a href="eonr.github.io">eonr.github.io</a>
