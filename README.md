@@ -1,5 +1,5 @@
 # ShowSegmentation
-GSoC 2019 project with Red Hen Lab. The goal is to create an algorithm that can automatically find boundaries between TV shows in unannotated recordings, by identifying facial and logo cues of various shows and using binary search to get to the boundary. More information about the project can be found <a href="https://sites.google.com/site/distributedlittleredhen/home/the-cognitive-core-research-topics-in-red-hen/the-barnyard/tv-show-segmentation">here</a>. 
+GSoC 2019 project with Red Hen Lab. The goal is to create an algorithm that can automatically find boundaries between TV shows in unannotated recordings and also find the names of the shows identified. The final method uses face recognition to find all the faces present in the video and clusters them to group the faces by persons. We then separate anchors/hosts of shows from those persons that are not anchors/hosts using a few rules. All anchors found using this method are named using our custom classifier built on the MS-Celeb dataset. More information about the project can be found <a href="https://sites.google.com/site/distributedlittleredhen/home/the-cognitive-core-research-topics-in-red-hen/the-barnyard/tv-show-segmentation">here</a>. 
 
 ### Blogs detailing weekly progress can be found at <a href="https://eonr.github.io">eonr.github.io</a>
 
