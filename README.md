@@ -28,7 +28,7 @@ python3 segment_video.py path/to/input/video.mp4 path/to/store/output --verbose
 ```
 
 ## Singularity Usage:
-<i> This is for those using the singularity image (segmentation_production.simg) on the CWRU HPC Cluster.</i>
+<i> **This is for those using the singularity image (segmentation_production.simg) on the CWRU HPC Cluster.</i>
 1. Connect to the <a href="https://vpnsetup.case.edu/">CWR VPN</a>.
 2. Login to the cluster using your CWR ID and your credentials. Example:
 ```bash
