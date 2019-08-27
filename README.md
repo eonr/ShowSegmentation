@@ -52,7 +52,6 @@ module load singularity/2.5.1
 *  ```--verbose``` (an optional flag which will make the program print progress statements like 'done extracting faces', 'done clustering faces' etc.
 7. So the main command is of the form
 ```bash
-So the input format is like:
 singularity exec -B /mnt ../segmentation_production.simg python3 segment_video.py {INPUT_VIDEO_PATH} {OUTPUT_PATH} {--verbose}
 ```
 8. The Rosenthal dataset is present at /mnt/rds/redhen/gallina/Rosenthal, we can take some video file from this as our input.
