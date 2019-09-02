@@ -21,9 +21,10 @@ def getMetadata(vid_path):
     vcap = cv2.VideoCapture(vid_path)
     vid_width, vid_height = int(vcap.get(3)), int(vcap.get(4))
     vcap.set(cv2.CAP_PROP_POS_AVI_RATIO, 1)
+    vid_duration = int(vcap.get(cv2.CAP_PROP_POS_MSEC)/1000)
     cv2.destroyAllWindows()
     vcap.release()
-    return vid_width, vid_height
+    return vid_width, vid_height, vid_duration
 
 class Show:
     def __init__(self, hosts, start_time, end_time):

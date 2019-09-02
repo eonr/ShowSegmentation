@@ -133,17 +133,17 @@ def filterShows(shows):
         short_show = min(shows[i][1][-1]-shows[i][1][0],shows[i+1][1][-1]-shows[i+1][1][0])
         overlap = diff/short_show
         if(overlap > overlap_threshold):
-            print('Hosts: {} & {}'.format(shows[i][0],shows[i+1][0]))
-            print('Original durations: {} to {} and {} to {}'.format(sec2HMS(shows[i][1][0]),sec2HMS(shows[i][1][-1]),sec2HMS(shows[i+1][1][0]),sec2HMS(shows[i+1][1][-1])))
-            print('Total duration: '+str(diff))
-            print('Overlap: '+str(overlap))
+            # print('Hosts: {} & {}'.format(shows[i][0],shows[i+1][0]))
+            # print('Original durations: {} to {} and {} to {}'.format(sec2HMS(shows[i][1][0]),sec2HMS(shows[i][1][-1]),sec2HMS(shows[i+1][1][0]),sec2HMS(shows[i+1][1][-1])))
+            # print('Total duration: '+str(diff))
+            # print('Overlap: '+str(overlap))
             lb = min(shows[i][1][0],shows[i+1][1][0])
             ub = max(shows[i][1][-1],shows[i+1][1][-1])
             shows[i][0] = shows[i][0]+'&'+shows[i+1][0]
             shows[i][1].extend(shows[i+1][1])
             shows[i][1] = sorted(shows[i][1])
-            print('Merging show {} from {} to {}'.format(shows[i+1][0],shows[i+1][1][0],shows[i+1][1][-1]))
-            print()
+            # print('Merging show {} from {} to {}'.format(shows[i+1][0],shows[i+1][1][0],shows[i+1][1][-1]))
+            # print()
             del(shows[i+1])
         else:
             i += 1
@@ -164,14 +164,14 @@ def filterShows(shows):
 
     #actual algorithm
         if(net_overlap > DOUBLE_OVERLAP_THRESHOLD):
-            print('Hosts: {} and {} and {}'.format(shows[i-1][0],shows[i][0],shows[i+1][0]))
-            print('Original durations: {} to {} and {} to {} and {} to {}'.format(sec2HMS(shows[i-1][1][0]),sec2HMS(shows[i-1][1][-1]),sec2HMS(shows[i][1][0]),sec2HMS(shows[i][1][-1]),sec2HMS(shows[i+1][1][0]),sec2HMS(shows[i+1][1][-1])))
+            # print('Hosts: {} and {} and {}'.format(shows[i-1][0],shows[i][0],shows[i+1][0]))
+            # print('Original durations: {} to {} and {} to {} and {} to {}'.format(sec2HMS(shows[i-1][1][0]),sec2HMS(shows[i-1][1][-1]),sec2HMS(shows[i][1][0]),sec2HMS(shows[i][1][-1]),sec2HMS(shows[i+1][1][0]),sec2HMS(shows[i+1][1][-1])))
             #         print('Total duration: '+sec2HMS(diff))
             #         print('Overlap: '+str(overlap))
-            print('Left overlap: {}'.format(overlap1))
-            print('Right overlap: {}'.format(overlap2))
-            print('Net overlap: {}'.format(net_overlap))
-            print()
+            # print('Left overlap: {}'.format(overlap1))
+            # print('Right overlap: {}'.format(overlap2))
+            # print('Net overlap: {}'.format(net_overlap))
+            # print()
             del(shows[i])
         else:
             i+=1
