@@ -8,8 +8,8 @@ import os
 from segment_video import segment_video
 from os.path import join as join
 
-dataset     = '/home/eon/Desktop/simulation/Rosenthal/'
-split = '/home/eon/Desktop/simulation/RosenthalSplit/'
+dataset     = '/mnt/rds/redhen/gallina/Rosenthal/'
+split = '/mnt/rds/redhen/gallina/RosenthalSplit/'
 
 for y in os.listdir(dataset):
     for y_m in os.listdir(join(dataset, y)):
