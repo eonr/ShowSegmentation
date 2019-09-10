@@ -21,7 +21,9 @@ pip install numpy pandas matplotlib opencv-python scikit-learn face_recognition
 pip install -r requirements.txt
 ```
 3. Download the <a href="https://drive.google.com/open?id=1AAkCoH1FDuJz4pTOyZv9QCUFPZAHECRI">anchors-encodings pickle</a> and place it in this location.
-```ShowSegmentation/final_usable_code/final_celeb_detection/final_pickles/anchors-with-TV-encodings.pickle</a>```
+```bash
+ShowSegmentation/final_usable_code/final_celeb_detection/final_pickles/anchors-with-TV-encodings.pickle</a>
+```
 
 4. Navigate to ShowSegmentation/final_usable_code/
 ```bash
