@@ -64,8 +64,8 @@ module load singularity/2.5.1
 1. segment_video.py is made to work on a single video file. It takes 3 inputs (in this order)
 *  ```path/to/input/video.mp4```
 *  ```path/to/output/directory``` (where the output will be stored)
-*  ```--verbose``` (an optional flag which will make the program print progress statements like 'done extracting faces', 'done clustering faces' etc.
-2. So the main command is of the form
+*  ```--verbose``` (an optional flag which will make the program print progress statements like 'done extracting faces', 'done clustering faces' etc.)
+2. The main command is of the form
 ```bash
 singularity exec -B /mnt ../segmentation_production.simg python3 segment_video.py {INPUT_VIDEO_PATH} {OUTPUT_PATH} {--verbose}
 ```
